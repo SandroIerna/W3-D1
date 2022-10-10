@@ -35,7 +35,6 @@ const color = function () {
   let blue = Math.floor(Math.random() * 255);
   let rGB = "rgb(" + red + ", " + green + ", " + blue + ")";
   return rGB;
-  console.log(rGB);
 };
 
 const randomColor = function () {
@@ -43,6 +42,15 @@ const randomColor = function () {
   console.log(price);
   let newColor = color();
   for (i = 0; i < price.length; i++) {
+    price[i].style.color = newColor;
+  }
+};
+
+const allDifferentRandomColor = function () {
+  let price = document.querySelectorAll(".price");
+  console.log(price);
+  for (i = 0; i < price.length; i++) {
+    let newColor = color();
     price[i].style.color = newColor;
   }
 };
