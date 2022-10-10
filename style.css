@@ -1,0 +1,36 @@
+.product_img {
+  height: 100px;
+  width: auto;
+  object-fit: cover;
+}
+
+#header {
+  text-align: center;
+  position: relative;
+}
+
+#table {
+  text-align: center;
+  position: relative;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+}
+
+#footer {
+  text-align: center;
+  position: relative;
+}
+
+#shop_address {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.price {
+  color: black;
+}
