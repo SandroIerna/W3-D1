@@ -30,10 +30,11 @@ const hideImage = function () {
 };
 
 const color = function () {
-  const red = Math.floor(Math.random() * 256);
-  const green = Math.floor(Math.random() * 256);
-  const blue = Math.floor(Math.random() * 256);
-  return (color = red + ", " + green + ", " + blue);
+  let red = Math.floor(Math.random() * 255);
+  let green = Math.floor(Math.random() * 255);
+  let blue = Math.floor(Math.random() * 255);
+  let rGB = "rgb(" + red + ", " + green + ", " + blue + ")";
+  return rGB;
   console.log(rGB);
 };
 
