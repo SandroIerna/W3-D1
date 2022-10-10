@@ -29,18 +29,19 @@ const hideImage = function () {
   }
 };
 
-const randomColor = function () {
-  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-  let price = document.getElementsByClassName("price");
-  for (i = 0; i < price.length; i++) {
-    console.log(price[i]);
-  }
+const color = function () {
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  return (color = red + ", " + green + ", " + blue);
+  console.log(rGB);
 };
 
-// const randomColor = function () {
-//     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-//     let price = document.getElementsByTagName("td");
-//     for (i = 0; i < price.length; i++) {
-//       console.log(price[3]);
-//     }
-//   };
+const randomColor = function () {
+  let price = document.querySelectorAll(".price");
+  console.log(price);
+  let newColor = color();
+  for (i = 0; i < price.length; i++) {
+    price[i].style.color = newColor;
+  }
+};
